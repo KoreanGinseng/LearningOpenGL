@@ -31,12 +31,12 @@ int gHeight = 600;
 
 #include <crtdbg.h>
 
-
-using convert_t = std::codecvt_utf8<wchar_t>;
-std::wstring_convert<convert_t, wchar_t> strconverter;
-
 namespace sip
 {
+
+	using convert_t = std::codecvt_utf8<wchar_t>;
+	std::wstring_convert<convert_t, wchar_t> strconverter;
+
 	std::string to_string(std::wstring wstr)
 	{
 		return strconverter.to_bytes(wstr);
@@ -46,17 +46,18 @@ namespace sip
 	{
 		return strconverter.from_bytes(str);
 	}
+
+	void _PRINTLOG(const _TCHAR* fmt, ...)
+	{
+		_TCHAR buf[512];
+		va_list ap;
+		va_start(ap, fmt);
+		_vsntprintf(buf, 511, fmt, ap);
+		buf[511] = 0;
+		OutputDebugString(buf);
+	}
 }
 
-void _PRINTLOG(const _TCHAR* fmt, ...)
-{
-	_TCHAR buf[512];
-	va_list ap;
-	va_start(ap, fmt);
-	_vsntprintf(buf, 511, fmt, ap);
-	buf[511] = 0;
-	OutputDebugString(buf);
-}
 
 int main(int argc, char* argv[])
 {
@@ -77,7 +78,7 @@ int main(int argc, char* argv[])
 
 	const GLubyte* version = glGetString(GL_VERSION);
 	const std::string str = (const char*)version;
-	_PRINTLOG(L"GL version : %s\n", sip::to_wstring(str).c_str());
+	sip::_PRINTLOG(L"GL version : %s\n", sip::to_wstring(str).c_str());
 
 	//! ÉÅÉCÉìÉãÅ[Év
 	while (!glfwWindowShouldClose(window))
