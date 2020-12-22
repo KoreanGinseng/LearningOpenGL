@@ -1,18 +1,10 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 //! INCLUDE
-#include <Windows.h>
-#include <mmsystem.h>
-#include <shellapi.h>
-#include <shlwapi.h>
-#include <Commdlg.h>
-#include <process.h>
-#include <tchar.h>
-#include <direct.h>
 
-#include <string>
-#include <codecvt>
-#include <locale>
+#include "SipCommon.h"
+
+#include <fstream>
+
+#include <crtdbg.h>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -22,47 +14,15 @@
 #pragma comment( lib, "glfw3.lib" )
 #pragma comment (lib, "OpenGL32.lib")
 
-#pragma comment(lib,"shlwapi.lib")
-#pragma comment(lib,"winmm.lib")
-#pragma comment(lib,"Comctl32.lib")
-
 int gWidth  = 800;
 int gHeight = 600;
-
-#include <crtdbg.h>
-
-namespace sip
-{
-
-	using convert_t = std::codecvt_utf8<wchar_t>;
-	std::wstring_convert<convert_t, wchar_t> strconverter;
-
-	std::string to_string(std::wstring wstr)
-	{
-		return strconverter.to_bytes(wstr);
-	}
-
-	std::wstring to_wstring(std::string str)
-	{
-		return strconverter.from_bytes(str);
-	}
-
-	void _PRINTLOG(const _TCHAR* fmt, ...)
-	{
-		_TCHAR buf[512];
-		va_list ap;
-		va_start(ap, fmt);
-		_vsntprintf(buf, 511, fmt, ap);
-		buf[511] = 0;
-		OutputDebugString(buf);
-	}
-}
-
 
 int main(int argc, char* argv[])
 {
 	//! デバッグフラグの設定
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+	SetCurrentDirectory("OpenGL_Project");
 
 	//! glfwの初期化
 	glfwInit();
@@ -76,9 +36,49 @@ int main(int argc, char* argv[])
 	//! glewの初期化
 	glewInit();
 
+	//! GL Version 取得
 	const GLubyte* version = glGetString(GL_VERSION);
-	const std::string str = (const char*)version;
-	sip::_PRINTLOG(L"GL version : %s\n", sip::to_wstring(str).c_str());
+	sip::SIP_PRINTLOG("GL version : %s\n", version);
+
+	float vertices[] = {
+	-0.5f, -0.5f, 0.0f, 1.0f,
+	 0.5f, -0.5f, 0.0f, 1.0f,
+	 0.0f,  0.5f, 0.0f, 1.0f
+	};
+
+	GLuint vao;
+	glGenVertexArrays(1, &vao);
+	glBindVertexArray(vao);
+
+	GLuint vbo;
+	glGenBuffers(1, &vbo);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
+	glEnableVertexAttribArray(0);
+
+	std::ifstream ivs("vs.glsl");
+	std::string vs((std::istreambuf_iterator<char>(ivs)), (std::istreambuf_iterator<char>()));
+	const char* vsc = vs.c_str();
+
+	std::ifstream ifs("fs.glsl");
+	std::string fs((std::istreambuf_iterator<char>(ifs)), (std::istreambuf_iterator<char>()));
+	const char* fsc = fs.c_str();
+
+	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
+	glShaderSource(vertexShader, 1, &vsc, NULL);
+	glCompileShader(vertexShader);
+
+	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	glShaderSource(fragmentShader, 1, &fsc, NULL);
+	glCompileShader(fragmentShader);
+
+	GLuint shaderProgram = glCreateProgram();
+	glAttachShader(shaderProgram, vertexShader);
+	glAttachShader(shaderProgram, fragmentShader);
+	glLinkProgram(shaderProgram);
+	glUseProgram(shaderProgram);
 
 	//! メインループ
 	while (!glfwWindowShouldClose(window))
@@ -90,6 +90,7 @@ int main(int argc, char* argv[])
 		//! 画面の色をクリア
 		glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		//! バッファのスワップ
 		glfwSwapBuffers(window);
