@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\tutorial15_lightmaps\tutorial15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\controls.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\texture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\objloader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\vboindexer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\controls.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\texture.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\objloader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\common\vboindexer.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\tutorial15_lightmaps\TransformVertexShader.vertexshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\tutorial15_lightmaps\TextureFragmentShaderLOD.fragmentshader">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5CF40350-1446-3C50-8428-5276E4C8D2DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{D52429A1-4D42-3333-93C7-40D76E573608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{CC9B9C45-A8DB-3F4D-9D8C-DB495C69D8F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

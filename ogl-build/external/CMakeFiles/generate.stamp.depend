@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/Documents/GitHub/LearningOpenGL/ogl-master/external/CMakeLists.txt
+D:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+D:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+D:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+D:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake

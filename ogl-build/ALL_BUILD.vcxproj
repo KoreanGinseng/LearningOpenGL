@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD7AC95F-9C58-3529-904B-B0E7BCBCC977}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\LearningOpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glfw-3.1.2\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glm-0.9.7.1;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glew-1.13.0\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\assimp-3.0.1270\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\bullet-2.81-rev2613\src;D:\Documents\GitHub\LearningOpenGL\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\LearningOpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glfw-3.1.2\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glm-0.9.7.1;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glew-1.13.0\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\assimp-3.0.1270\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\bullet-2.81-rev2613\src;D:\Documents\GitHub\LearningOpenGL\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\LearningOpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glfw-3.1.2\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glm-0.9.7.1;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glew-1.13.0\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\assimp-3.0.1270\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\bullet-2.81-rev2613\src;D:\Documents\GitHub\LearningOpenGL\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\LearningOpenGL\ogl-master\external\AntTweakBar-1.16\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glfw-3.1.2\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glm-0.9.7.1;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\glew-1.13.0\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\assimp-3.0.1270\include;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\bullet-2.81-rev2613\src;D:\Documents\GitHub\LearningOpenGL\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\LearningOpenGL\ogl-master\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Documents/GitHub/LearningOpenGL/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/LearningOpenGL/ogl-master -BD:/Documents/GitHub/LearningOpenGL/ogl-build --check-stamp-file D:/Documents/GitHub/LearningOpenGL/ogl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeSystem.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Documents/GitHub/LearningOpenGL/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/LearningOpenGL/ogl-master -BD:/Documents/GitHub/LearningOpenGL/ogl-build --check-stamp-file D:/Documents/GitHub/LearningOpenGL/ogl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeSystem.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Documents/GitHub/LearningOpenGL/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/LearningOpenGL/ogl-master -BD:/Documents/GitHub/LearningOpenGL/ogl-build --check-stamp-file D:/Documents/GitHub/LearningOpenGL/ogl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeSystem.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Documents/GitHub/LearningOpenGL/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/LearningOpenGL/ogl-master -BD:/Documents/GitHub/LearningOpenGL/ogl-build --check-stamp-file D:/Documents/GitHub/LearningOpenGL/ogl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\3.19.4\CMakeSystem.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\Documents\GitHub\LearningOpenGL\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Documents\GitHub\LearningOpenGL\ogl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\ZERO_CHECK.vcxproj">
+      <Project>{945DFA90-0E96-357A-B335-BB1B27E2A311}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj">
+      <Project>{55F0682C-20F9-36ED-B882-C3816D89FAAB}</Project>
+      <Name>ANTTWEAKBAR_116_OGLCORE_GLFW</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\bullet-2.81-rev2613\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{A89961F9-D4D3-3BB3-A05B-6F612232832F}</Project>
+      <Name>BulletCollision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{BC9B7054-4E20-361D-AFB6-84098A78F9C3}</Project>
+      <Name>BulletDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj">
+      <Project>{4C338095-E369-3D09-979F-7688AB46ACE8}</Project>
+      <Name>BulletSoftBody</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\GLEW_1130.vcxproj">
+      <Project>{10394F7E-4CB2-3168-90FE-F6E9C916770C}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj">
+      <Project>{786ABEA1-22E4-3DBD-B6CB-7D566FD3B1D0}</Project>
+      <Name>LinearMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\assimp-3.0.1270\code\assimp.vcxproj">
+      <Project>{373C27F5-0DA9-35BC-AFF7-C9DEE06A5397}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{92005896-6B34-379A-9C3A-8946E3170DC2}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{8C298BC9-D6B7-3E72-9BE3-168FDCDEAD30}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{AFBF4BCD-AA99-3450-9A3D-A26E18E29D5D}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{D1963758-39BA-3975-8C3C-E72C29CB16A6}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{1E90FFB1-2CD4-34DE-A57C-F00C45BBEFDA}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{1F87869F-5233-3665-9B88-5D5879F5DDF6}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{0D87C9D5-D5AD-3367-A803-E156DD397DAD}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{2DCF0A5B-9B40-3A36-B55B-ABD4F9D20428}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{60DD4EE7-9E27-377A-BA07-4A87C614CC60}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{304087A2-1E33-34A4-B3E5-B397FFD49529}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{9D318B57-CDFA-394E-8548-CDD86421A558}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{564842DA-8967-3520-B562-C6DC287FBFEE}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\misc05_picking_BulletPhysics.vcxproj">
+      <Project>{A1BC60FD-CCAC-3379-B8AF-B4EF930C8380}</Project>
+      <Name>misc05_picking_BulletPhysics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\misc05_picking_custom.vcxproj">
+      <Project>{498D5EA5-04E4-37A3-A24E-D5A2B57197FC}</Project>
+      <Name>misc05_picking_custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\misc05_picking_slow_easy.vcxproj">
+      <Project>{83EB83F1-17F6-31A4-9594-250128393B0C}</Project>
+      <Name>misc05_picking_slow_easy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{0E13BA33-96B4-37F7-B7B3-0A84E7F670BD}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{A7B3EBDE-9C8F-35EB-A2B1-4CA7C5895EB2}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{429B4BE8-63D3-3A9D-AD62-A240EC0F37EE}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\playground.vcxproj">
+      <Project>{C8CB43F1-E9C0-3413-9559-617218B5ADCA}</Project>
+      <Name>playground</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{C27CC4FF-E2F4-382B-83E2-D94D6262710F}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{F3531AD8-3B01-3463-B481-744BE343B5BB}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{3A497C4C-66BC-39A4-919F-1CEAB35200C3}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{F5A7E909-6B31-3B38-81C8-DDCEDE42B3E5}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{10CF3073-93F4-3435-B7F4-B771DBAE6D0A}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{BF302E73-A590-3D75-B997-A082E994D177}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{AF145EE7-95D5-3D4D-98BC-6B94392A8B9A}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial01_first_window.vcxproj">
+      <Project>{EB7DF274-1280-30C5-B83D-8F2719B98C10}</Project>
+      <Name>tutorial01_first_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial02_red_triangle.vcxproj">
+      <Project>{C3B4264F-9DE1-3F5C-A392-FDB33067BAD9}</Project>
+      <Name>tutorial02_red_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial03_matrices.vcxproj">
+      <Project>{BE2C8922-7496-317E-BCB5-EA3E01F5EFB1}</Project>
+      <Name>tutorial03_matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial04_colored_cube.vcxproj">
+      <Project>{4E2271A4-405B-3B89-A57D-498E41324BFC}</Project>
+      <Name>tutorial04_colored_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial05_textured_cube.vcxproj">
+      <Project>{FF4AE947-CB99-3AEE-B975-3582DD226C0E}</Project>
+      <Name>tutorial05_textured_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial06_keyboard_and_mouse.vcxproj">
+      <Project>{67CC74F8-CB55-338A-92F3-36D8F4BC1D34}</Project>
+      <Name>tutorial06_keyboard_and_mouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial07_model_loading.vcxproj">
+      <Project>{8193D52F-A12A-309D-A637-5ACB32DC7DBA}</Project>
+      <Name>tutorial07_model_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial08_basic_shading.vcxproj">
+      <Project>{EC82CA87-0789-38B0-9A91-42F5A8049A0D}</Project>
+      <Name>tutorial08_basic_shading</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial09_AssImp.vcxproj">
+      <Project>{D072279C-FBD4-3B7B-8908-1F986A5E0466}</Project>
+      <Name>tutorial09_AssImp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial09_several_objects.vcxproj">
+      <Project>{4EEB8269-69C3-35E5-90F6-745775D3831A}</Project>
+      <Name>tutorial09_several_objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial09_vbo_indexing.vcxproj">
+      <Project>{1F865B3A-F61A-332D-95FE-C53CFFC9D417}</Project>
+      <Name>tutorial09_vbo_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial10_transparency.vcxproj">
+      <Project>{1060F471-7D48-36E5-8394-B17FF22AB75F}</Project>
+      <Name>tutorial10_transparency</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial11_2d_fonts.vcxproj">
+      <Project>{9F3D6CF2-F66C-32CD-AA8F-5625A32D535B}</Project>
+      <Name>tutorial11_2d_fonts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial12_extensions.vcxproj">
+      <Project>{46D97C74-0802-34A4-812E-AA54C4EC652E}</Project>
+      <Name>tutorial12_extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial13_normal_mapping.vcxproj">
+      <Project>{CECA2B6D-9371-3D07-920B-C424DABC6868}</Project>
+      <Name>tutorial13_normal_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial14_render_to_texture.vcxproj">
+      <Project>{E01BD4F4-4A9F-31F2-B39F-15CF5A08DA6E}</Project>
+      <Name>tutorial14_render_to_texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial15_lightmaps.vcxproj">
+      <Project>{9A824D70-F2C8-3D86-9C98-20A0039A5233}</Project>
+      <Name>tutorial15_lightmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial16_shadowmaps.vcxproj">
+      <Project>{7DE64328-FE53-31A8-ABDC-FD3AF793199A}</Project>
+      <Name>tutorial16_shadowmaps</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial16_shadowmaps_simple.vcxproj">
+      <Project>{03AF62E9-B03F-3AFE-8F77-C214EE33E599}</Project>
+      <Name>tutorial16_shadowmaps_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial17_rotations.vcxproj">
+      <Project>{6C3F3682-A915-348A-BF63-58C3210F5334}</Project>
+      <Name>tutorial17_rotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial18_billboards.vcxproj">
+      <Project>{2C48651A-1367-32CE-95B3-36E8CB415FF7}</Project>
+      <Name>tutorial18_billboards</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\tutorial18_particles.vcxproj">
+      <Project>{59E5A534-9FCC-3670-82E1-02DFB8712D77}</Project>
+      <Name>tutorial18_particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{89D0B400-4A29-3639-ADD8-8D577FE6A415}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{C3C0C79F-A5D7-3BD0-B7FD-63B53B3C7468}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\LearningOpenGL\ogl-build\external\assimp-3.0.1270\contrib\zlib\zlib.vcxproj">
+      <Project>{705909FB-208D-3646-8B2A-034ADE366479}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
